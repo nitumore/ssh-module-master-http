@@ -1,6 +1,7 @@
 module "stage101" {
 
-  source                 = "git::ssh://git@github.com/nitumore/inner-ssh-module-master"
+  #source                 = "git::ssh://git@2aae2a732281.ngrok.io/scm/ac/inner-ssh-module-master.git"
+  source                 = "git::http://2aae2a732281.ngrok.io/scm/ac/inner-ssh-module-master"
   cidr_block             = "10.0.0.0/16"
   vpc_id                 = module.stage101.vpc_id
   subnet_cidr            = "10.0.1.0/24"
